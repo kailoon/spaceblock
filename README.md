@@ -4,9 +4,9 @@
 
 ### TODO:
 
-- [ ] Author template
+- [] Author template
 - [ ] 404 template
-- [ ] Page template
+- [x] Page template
 - [ ] Archive template
 - [ ] Unit Test
 - [ ] Screenshot

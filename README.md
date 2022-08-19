@@ -4,10 +4,10 @@
 
 ### TODO:
 
-- [ ] Author template
-- [ ] 404 template
+- [x] Author template
+- [x] 404 template
 - [x] Page template
-- [ ] Archive template
+- [x] Archive template
 - [ ] Unit Test
 - [ ] Screenshot
 - [ ] Readme.txt

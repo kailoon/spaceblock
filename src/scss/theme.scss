@@ -229,6 +229,16 @@ a:active {
 			}
 		}
 	}
+	&.alignfull {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+}
+
+/* Block: Search ----------------------------------*/
+.wp-block-search__input {
+	border-radius: 5px;
+	border: 2px solid var(--wp--preset--color--tertiary);
 }
 
 /* Block: Terms ----------------------------------*/
@@ -308,6 +318,7 @@ a:active {
 				}
 				h2 {
 					overflow: hidden;
+					text-align: left;
 					a {
 						display: -webkit-box;
 						-webkit-line-clamp: 3;
@@ -336,7 +347,7 @@ a:active {
 							color: var(--wp--preset--color--white);
 						}
 						h2 {
-							font-size: var(--font-size-2xl);
+							font-size: var(--font-size-xl);
 						}
 					}
 					figure {
@@ -472,13 +483,11 @@ a:active {
 	font-family: var(--wp--preset--font-family--sans);
 	position: relative;
 	padding: 8px 8px 8px 20px;
-	border-radius: 50px;
 	display: flex;
 	align-items: center;
 	gap: 12px;
 	font-size: var(--wp--preset--font-size--xs);
 	background-color: var(--wp--preset--color--secondary);
-	border: 1px solid var(--wp--preset--color--quaternary);
 	transition: all 0.2s ease-in-out;
 	&::after {
 		content: '';
@@ -505,6 +514,9 @@ a:active {
 		opacity: 0.75;
 	}
 }
+.wp-block-button__link {
+	border-radius: 0;
+}
 
 .wp-block-button__link {
 	transition: all 0.2s ease-in-out;
@@ -524,6 +536,29 @@ a:active {
 .wp-block-categories__list {
 	list-style-type: none;
 	padding-inline: 0;
+}
+
+.wp-block-categories-list {
+	.cat-item {
+		margin-block: 0.5rem;
+		font-size: var(--wp--preset--font-size--xs);
+		font-family: var(--wp--preset--font-family--sans);
+		&.current-cat a {
+			color: black;
+		}
+	}
+}
+
+/* Block: Query Title ------------------------------------*/
+.wp-block-query-title {
+	font-size: var(--wp--preset--font-size--sm);
+	font-family: var(--wp--preset--font-family--sans);
+	color: var(--wp--preset--color--quinary);
+	span {
+		font-size: var(--wp--preset--font-size--xl);
+		display: block;
+		color: var(--wp--preset--color--black);
+	}
 }
 
 /* Block: Query Pagination ------------------------------------*/

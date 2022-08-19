@@ -36,13 +36,23 @@
 
     <!-- wp:column {"width":"30%","style":{"spacing":{"padding":{"top":"12px"}}}} -->
     <div class="wp-block-column" style="padding-top:12px;flex-basis:30%">
+      <!-- wp:avatar {"size":48,"style":{"border":{"radius":"99px"}}} /-->
+
       <!-- wp:query-title {"type":"archive","level":5} /-->
+
+      <!-- wp:post-author-biography {"textColor":"quinary","fontSize":"sm","fontFamily":"sans"} /-->
 
       <!-- wp:separator {"className":"is-style-wide"} -->
       <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
       <!-- /wp:separator -->
 
-      <!-- wp:categories {"showPostCounts":true,"showOnlyTopLevel":true} /-->
+      <!-- wp:social-links {"openInNewTab":true,"size":"has-small-icon-size","className":"is-style-logos-only","style":{"spacing":{"blockGap":{"top":"16px","left":"16px"}}}} -->
+      <ul class="wp-block-social-links has-small-icon-size is-style-logos-only">
+        <!-- wp:social-link {"url":"#","service":"facebook"} /-->
+
+        <!-- wp:social-link {"url":"#","service":"twitter"} /-->
+      </ul>
+      <!-- /wp:social-links -->
     </div>
     <!-- /wp:column -->
   </div>

@@ -26,8 +26,8 @@ Spaceblock therefore is also distributed under the terms of the GNU GPL.
   background-color: var(--wp--preset--color--primary);
   border-radius: 0;
   border: none;
-  color: var(--wp--preset--color--background);
-  font-size: var(--wp--preset--font-size--medium);
+  color: var(--wp--preset--color--white);
+  font-size: var(--wp--preset--font-size--md);
   padding: calc(0.667em + 2px) calc(1.333em + 2px);
 }
 
@@ -288,6 +288,16 @@ a:active {
     border-right: 1px solid var(--wp--preset--color--tertiary);
   }
 }
+.wp-block-columns.alignfull {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Block: Search ----------------------------------*/
+.wp-block-search__input {
+  border-radius: 5px;
+  border: 2px solid var(--wp--preset--color--tertiary);
+}
 
 /* Block: Terms ----------------------------------*/
 .wp-block-post-terms {
@@ -364,6 +374,7 @@ a:active {
 }
 .wp-block-query.is-style-featured-category-1 ul li h2 {
   overflow: hidden;
+  text-align: left;
 }
 .wp-block-query.is-style-featured-category-1 ul li h2 a {
   display: -webkit-box;
@@ -393,7 +404,7 @@ a:active {
   color: var(--wp--preset--color--white);
 }
 .wp-block-query.is-style-featured-category-1 ul li:first-of-type .wp-block-group h2 {
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-xl);
 }
 .wp-block-query.is-style-featured-category-1 ul li:first-of-type figure {
   position: relative;
@@ -514,13 +525,11 @@ a:active {
   font-family: var(--wp--preset--font-family--sans);
   position: relative;
   padding: 8px 8px 8px 20px;
-  border-radius: 50px;
   display: flex;
   align-items: center;
   gap: 12px;
   font-size: var(--wp--preset--font-size--xs);
   background-color: var(--wp--preset--color--secondary);
-  border: 1px solid var(--wp--preset--color--quaternary);
   transition: all 0.2s ease-in-out;
 }
 .wp-block-read-more::after {
@@ -550,6 +559,10 @@ a:active {
 }
 
 .wp-block-button__link {
+  border-radius: 0;
+}
+
+.wp-block-button__link {
   transition: all 0.2s ease-in-out;
 }
 .wp-block-button__link:hover {
@@ -567,6 +580,27 @@ a:active {
 .wp-block-categories__list {
   list-style-type: none;
   padding-inline: 0;
+}
+
+.wp-block-categories-list .cat-item {
+  margin-block: 0.5rem;
+  font-size: var(--wp--preset--font-size--xs);
+  font-family: var(--wp--preset--font-family--sans);
+}
+.wp-block-categories-list .cat-item.current-cat a {
+  color: black;
+}
+
+/* Block: Query Title ------------------------------------*/
+.wp-block-query-title {
+  font-size: var(--wp--preset--font-size--sm);
+  font-family: var(--wp--preset--font-family--sans);
+  color: var(--wp--preset--color--quinary);
+}
+.wp-block-query-title span {
+  font-size: var(--wp--preset--font-size--xl);
+  display: block;
+  color: var(--wp--preset--color--black);
 }
 
 /* Block: Query Pagination ------------------------------------*/

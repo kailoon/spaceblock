@@ -39,18 +39,29 @@ a:active {
 	text-decoration: none;
 }
 
-// body {
-// 	&.single {
-// 		background: linear-gradient(
-// 			to bottom,
-// 			#ebf4f5 0%,
-// 			#b5c6e0 25%,
-// 			#ffffff 25%,
-// 			#ffffff 100%
-// 		);
-// 	}
-// }
-
+/* Block: Heading ------------------------------------*/
+.is-style-has-icon {
+	a {
+		text-decoration: none;
+		color: black;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.25rem;
+		transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+		&::after {
+			content: '';
+			background: url(assets/img/Arrow-Right.svg) no-repeat right center;
+			background-size: 75%;
+			width: 30px;
+			height: 30px;
+			position: relative !important;
+		}
+		&:hover {
+			color: var(--wp--preset--color--primary);
+			gap: 0.5rem;
+		}
+	}
+}
 /* Block: Group ------------------------------------*/
 .wp-block-group {
 	box-sizing: border-box;
@@ -124,6 +135,9 @@ a:active {
 	background-color: var(--wp--preset--color--senary);
 	aspect-ratio: 16 / 9;
 	overflow: hidden;
+	&.alignwide {
+		max-width: 900px !important;
+	}
 	a {
 		display: inline;
 		img {
@@ -303,93 +317,72 @@ a:active {
 		ul {
 			display: grid;
 			grid-template-columns: 1fr;
-			grid-template-rows: auto;
+			grid-auto-rows: minmax(min-content, max-content);
 
 			@media screen and (min-width: 1024px) {
-				grid-template-columns: 2fr 1fr;
-				grid-template-rows: repeat(3, 1fr);
+				grid-template-columns: 1fr 1fr;
+				grid-auto-rows: minmax(min-content, max-content);
 			}
-			gap: var(--wp--custom--spacing--outer);
+			gap: calc(var(--wp--custom--spacing--outer) * 2);
 
 			li {
 				margin: 0;
-				figure {
-					margin: 0;
+				display: flex;
+				flex-direction: column;
+				position: relative;
+				.wp-block-group {
+					margin-top: 0;
 				}
-				h2 {
-					overflow: hidden;
+				.wp-block-post-excerpt {
 					text-align: left;
-					a {
-						display: -webkit-box;
-						-webkit-line-clamp: 3;
-						-webkit-box-orient: vertical;
-					}
+				}
+				figure {
+					margin-block-start: 0;
+					margin-block-end: 0;
 				}
 				&:first-of-type {
-					grid-row: span 3;
-					grid-column: 1 / 2;
-					height: 100%;
-					position: relative;
-					// max-height: 480px;
-					overflow: hidden;
-					.wp-block-group {
-						position: absolute;
-						bottom: 0;
-						left: 0;
-						z-index: 3;
-						width: 100%;
-						padding: var(--wp--custom--spacing--outer);
-						display: flex;
-						flex-direction: column-reverse;
-						gap: calc(var(--wp--custom--spacing--outer) / 2);
-						a,
-						.wp-block-post-author {
-							color: var(--wp--preset--color--white);
-						}
-						h2 {
-							font-size: var(--font-size-xl);
-						}
+					grid-row: span 4;
+					@media screen and (max-width: 1024px) {
+						border-bottom: 1px solid var(--wp--preset--color--senary);
+						padding-bottom: 20px;
 					}
-					figure {
-						position: relative;
-						aspect-ratio: auto;
-
-						&::before {
+					@media screen and (min-width: 1024px) {
+						&:after {
 							content: '';
-							position: absolute;
-							pointer-events: none;
-							inset: 0;
-							background: linear-gradient(
-								to top,
-								rgba(0, 0, 0, 0.55) 0%,
-								rgba(0, 0, 0, 0) 50%,
-								rgba(0, 0, 0, 0) 50%,
-								rgba(0, 0, 0, 0) 100%
-							);
-							z-index: 2;
-							width: 100%;
 							height: 100%;
+							position: absolute;
+							width: 1px;
+							top: 0;
+							right: calc(var(--wp--custom--spacing--outer) * -1);
+							background-color: var(--wp--preset--color--senary);
 						}
 					}
 				}
 				&:not(:first-of-type) {
-					display: flex;
-					gap: var(--wp--custom--spacing--outer);
-					.wp-block-post-terms {
-						margin-block-start: 10px;
-					}
-					.wp-block-group {
-						margin: 0;
-						align-self: center;
-					}
+					flex-direction: row;
+					align-items: center;
+					gap: var(--wp--style--block-gap);
+
 					figure {
-						height: 100%px;
-						flex: 0 0 200px;
+						flex: 0 0 150px;
+						height: 100px;
 						img {
-							height: 100%;
-							width: 200px;
-							object-fit: cover;
+							height: 100px;
 						}
+					}
+					.wp-block-post-excerpt {
+						display: none;
+					}
+				}
+				&:not(:first-of-type):not(:last-of-type) {
+					&:after {
+						content: '';
+						height: 1px;
+						position: absolute;
+						width: 100%;
+						left: 0;
+						bottom: calc(var(--wp--custom--spacing--outer) * -1);
+						background-color: var(--wp--preset--color--senary);
 					}
 				}
 			}
@@ -491,8 +484,8 @@ a:active {
 	transition: all 0.2s ease-in-out;
 	&::after {
 		content: '';
-		background: url(assets/img/Caret-Right.svg) no-repeat right center;
-		background-size: 100%;
+		background: url(assets/img/Arrow-Right.svg) no-repeat right center;
+		background-size: 75%;
 		width: 30px;
 		height: 30px;
 		position: relative !important;
@@ -609,6 +602,7 @@ a:active {
 		}
 	}
 }
+
 /*
  * Utility styles.
  * A couple utilities that are used throughout patterns and parts

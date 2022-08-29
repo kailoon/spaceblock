@@ -8,7 +8,8 @@
 - [x] 404 template
 - [x] Page template
 - [x] Archive template
+- [x] Patterns
 - [ ] Unit Test
 - [ ] Screenshot
 - [ ] Readme.txt
-- [ ] Sub Footer
+- [x] Sub Footer

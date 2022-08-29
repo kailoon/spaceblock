@@ -85,7 +85,6 @@ function spaceblock_register_block_patterns() {
 		'spaceblock-query' => array( 'label' => __( 'spaceblock Query', 'spaceblock' ) ),
 		'spaceblock-footer'   => array( 'label' => __( 'spaceblock Footer', 'spaceblock' ) ),
 		'spaceblock-header'   => array( 'label' => __( 'spaceblock Header', 'spaceblock' ) ),
-		'spaceblock-hero'    => array( 'label' => __( 'spaceblock Hero', 'spaceblock' ) ),
 		'spaceblock-section'    => array( 'label' => __( 'spaceblock Section', 'spaceblock' ) ),
 	));
 

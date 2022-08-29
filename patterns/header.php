@@ -7,24 +7,16 @@
 ?>
 <!-- wp:group {"layout":{"inherit":true}} -->
 <div class="wp-block-group">
-  <!-- wp:group {"align":"full","layout":{"type":"flex","wrap":"nowrap","justifyContent":"space-between"}} -->
-  <div class="wp-block-group alignfull">
-    <!-- wp:site-logo {"width":169} /-->
+  <!-- wp:group {"align":"wide","layout":{"type":"flex","wrap":"nowrap","justifyContent":"space-between","flexWrap":"wrap"}} -->
+  <div class="wp-block-group alignwide">
+    <!-- wp:site-logo {"width":126} /-->
 
-    <!-- wp:navigation {"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right"}} /-->
-
-    <!-- wp:social-links {"iconColor":"black","iconColorValue":"#000000","openInNewTab":true,"size":"has-small-icon-size","className":"is-style-logos-only hide-on-tablet","layout":{"type":"flex","flexWrap":"nowrap"},"style":{"spacing":{"blockGap":{"top":"20px","left":"20px"}}}} -->
-    <ul class="wp-block-social-links has-small-icon-size has-icon-color is-style-logos-only hide-on-tablet">
-      <!-- wp:social-link {"url":"#","service":"facebook"} /-->
-
-      <!-- wp:social-link {"url":"#","service":"twitter"} /-->
-
-      <!-- wp:social-link {"url":"#","service":"medium"} /-->
-
-      <!-- wp:social-link {"url":"#","service":"instagram"} /-->
-    </ul>
-    <!-- /wp:social-links -->
+    <!-- wp:navigation {"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","flexWrap":"wrap"}} /-->
   </div>
   <!-- /wp:group -->
+
+  <!-- wp:separator {"align":"wide","className":"is-style-wide"} -->
+  <hr class="wp-block-separator alignwide has-alpha-channel-opacity is-style-wide" />
+  <!-- /wp:separator -->
 </div>
 <!-- /wp:group -->

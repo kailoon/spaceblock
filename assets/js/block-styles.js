@@ -9,6 +9,12 @@ wp.domReady(() => {
 			label: 'Featured Category 2'
 		}
 	])
+	wp.blocks.registerBlockStyle('core/heading', [
+		{
+			name: 'has-icon',
+			label: 'Has Icon'
+		}
+	])
 	wp.blocks.registerBlockStyle('core/post-featured-image', [
 		{
 			name: 'circle',

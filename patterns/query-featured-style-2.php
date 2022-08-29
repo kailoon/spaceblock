@@ -11,15 +11,12 @@
   <!-- wp:post-template -->
   <!-- wp:post-featured-image {"isLink":true,"className":"is-style-default"} /-->
 
-  <!-- wp:group -->
+  <!-- wp:group {"style":{"spacing":{"blockGap":"10px"}}} -->
   <div class="wp-block-group">
+    <!-- wp:post-title {"isLink":true} /-->
+    <!-- wp:post-excerpt /-->
     <!-- wp:post-author {"avatarSize":24} /-->
 
-    <!-- wp:post-title {"isLink":true} /-->
-
-    <!-- wp:post-excerpt /-->
-
-    <!-- wp:read-more {"content":"Read More "} /-->
   </div>
   <!-- /wp:group -->
   <!-- /wp:post-template -->

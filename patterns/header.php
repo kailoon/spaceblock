@@ -9,7 +9,7 @@
 <div class="wp-block-group">
   <!-- wp:group {"align":"wide","layout":{"type":"flex","wrap":"nowrap","justifyContent":"space-between","flexWrap":"wrap"}} -->
   <div class="wp-block-group alignwide">
-    <!-- wp:site-logo {"width":126} /-->
+    <!-- wp:site-logo {"width":169} /-->
 
     <!-- wp:navigation {"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","flexWrap":"wrap"}} /-->
   </div>

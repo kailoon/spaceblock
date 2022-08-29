@@ -323,7 +323,7 @@ a:active {
 				grid-template-columns: 1fr 1fr;
 				grid-auto-rows: minmax(min-content, max-content);
 			}
-			gap: calc(var(--wp--custom--spacing--outer) * 2);
+			gap: var(--wp--custom--spacing--outer);
 
 			li {
 				margin: 0;
@@ -336,6 +336,7 @@ a:active {
 				.wp-block-post-excerpt {
 					text-align: left;
 				}
+
 				figure {
 					margin-block-start: 0;
 					margin-block-end: 0;
@@ -353,7 +354,7 @@ a:active {
 							position: absolute;
 							width: 1px;
 							top: 0;
-							right: calc(var(--wp--custom--spacing--outer) * -1);
+							right: calc(var(--wp--custom--spacing--outer) / -2);
 							background-color: var(--wp--preset--color--senary);
 						}
 					}
@@ -361,8 +362,11 @@ a:active {
 				&:not(:first-of-type) {
 					flex-direction: row;
 					align-items: center;
-					gap: var(--wp--style--block-gap);
-
+					gap: calc(var(--wp--style--block-gap) / 2);
+					h2 {
+						font-size: var(--wp--preset--font-size--base);
+						margin-top: 0;
+					}
 					figure {
 						flex: 0 0 150px;
 						height: 100px;
@@ -381,7 +385,7 @@ a:active {
 						position: absolute;
 						width: 100%;
 						left: 0;
-						bottom: calc(var(--wp--custom--spacing--outer) * -1);
+						bottom: calc(var(--wp--custom--spacing--outer) / -2);
 						background-color: var(--wp--preset--color--senary);
 					}
 				}
@@ -396,18 +400,16 @@ a:active {
 			position: relative;
 			grid-template-columns: 1fr;
 			grid-template-rows: auto;
-			grid-column-gap: calc(var(--wp--custom--spacing--outer) * 2);
-			grid-row-gap: calc(var(--wp--custom--spacing--outer) / 2);
+			gap: var(--wp--custom--spacing--outer);
 
 			@media screen and (min-width: 1024px) {
 				grid-template-columns: repeat(3, 1fr);
-				grid-template-rows: auto;
+				grid-auto-rows: minmax(min-content, max-content);
 			}
 
 			li {
 				margin: 0;
-				border-bottom: 1px solid var(--wp--preset--color--senary);
-				padding-bottom: var(--wp--custom--spacing--outer);
+				position: relative;
 				&:first-of-type {
 					@media screen and (min-width: 1024px) {
 						padding-bottom: 0;
@@ -422,7 +424,7 @@ a:active {
 					}
 					flex-direction: row-reverse;
 					position: relative;
-					grid-column-gap: calc(var(--wp--custom--spacing--outer) * 2);
+					gap: var(--wp--custom--spacing--outer);
 					&::after {
 						content: '';
 						position: absolute;
@@ -430,7 +432,7 @@ a:active {
 						width: 1px;
 						background-color: var(--wp--preset--color--senary);
 						top: 0;
-						right: calc(var(--wp--custom--spacing--outer) * -1);
+						right: calc(var(--wp--custom--spacing--outer) / -2);
 					}
 					figure {
 						@media screen and (min-width: 1024px) {
@@ -444,7 +446,7 @@ a:active {
 					.wp-block-group {
 						text-align: left;
 						h2 {
-							font-size: var(--wp--preset--font-size--xl);
+							// font-size: var(--wp--preset--font-size--xl);
 						}
 						.wp-block-post-excerpt {
 							text-align: left;
@@ -466,6 +468,17 @@ a:active {
 						}
 					}
 				}
+				&:not(:first-of-type):not(:last-of-type) {
+					&:after {
+						content: '';
+						height: 1px;
+						position: absolute;
+						width: 100%;
+						left: 0;
+						bottom: calc(var(--wp--custom--spacing--outer) / -2);
+						background-color: var(--wp--preset--color--senary);
+					}
+				}
 			}
 		}
 	}
@@ -475,7 +488,7 @@ a:active {
 .wp-block-read-more {
 	font-family: var(--wp--preset--font-family--sans);
 	position: relative;
-	padding: 8px 8px 8px 20px;
+	padding: 8px 16px 8px 20px;
 	display: flex;
 	align-items: center;
 	gap: 12px;

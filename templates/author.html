@@ -2,39 +2,64 @@
 
 <!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"80px","bottom":"80px"}}},"layout":{"inherit":true}} -->
 <main class="wp-block-group" style="padding-top:80px;padding-bottom:80px">
-  <!-- wp:columns {"align":"wide"} -->
+  <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":"40px"}}} -->
   <div class="wp-block-columns alignwide">
-    <!-- wp:column {"width":"100%"} -->
-    <div class="wp-block-column" style="flex-basis:100%">
-      <!-- wp:pattern {"slug":"spaceblock/query-grid"} /-->
+    <!-- wp:column {"width":"30%"} -->
+    <div class="wp-block-column" style="flex-basis:30%">
+      <!-- wp:group {"style":{"spacing":{"padding":{"top":"40px","bottom":"40px"}}},"backgroundColor":"secondary"} -->
+      <div class="wp-block-group has-secondary-background-color has-background"
+        style="padding-top:40px;padding-bottom:40px">
+        <!-- wp:avatar {"size":48,"style":{"border":{"radius":"99px"}}} /-->
 
+        <!-- wp:query-title {"type":"archive","textAlign":"center","level":3,"fontSize":"base"} /-->
+
+        <!-- wp:post-author-biography {"textAlign":"center","textColor":"quinary","fontSize":"sm","fontFamily":"sans"} /-->
+
+        <!-- wp:separator {"className":"is-style-wide"} -->
+        <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
+        <!-- /wp:separator -->
+
+        <!-- wp:social-links {"openInNewTab":true,"size":"has-small-icon-size","className":"is-style-logos-only","style":{"spacing":{"blockGap":{"top":"16px","left":"16px"}}}} -->
+        <ul class="wp-block-social-links has-small-icon-size is-style-logos-only">
+          <!-- wp:social-link {"url":"#","service":"facebook"} /-->
+
+          <!-- wp:social-link {"url":"#","service":"twitter"} /-->
+        </ul>
+        <!-- /wp:social-links -->
+      </div>
+      <!-- /wp:group -->
     </div>
     <!-- /wp:column -->
 
-    <!-- wp:column {"width":"30%","style":{"spacing":{"padding":{"top":"12px"}}}} -->
-    <div class="wp-block-column" style="padding-top:12px;flex-basis:30%">
-      <!-- wp:avatar {"size":48,"style":{"border":{"radius":"99px"}}} /-->
+    <!-- wp:column {"width":"100%"} -->
+    <div class="wp-block-column" style="flex-basis:100%">
+      <!-- wp:heading {"level":3} -->
+      <h3>Recent Articles</h3>
+      <!-- /wp:heading -->
 
-      <!-- wp:query-title {"type":"archive","level":5} /-->
+      <!-- wp:query {"queryId":14,"query":{"perPage":"4","pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":{"category":[67]}},"displayLayout":{"type":"flex","columns":4},"className":"is-style-default","layout":{"inherit":false}} -->
+      <div class="wp-block-query is-style-default">
+        <!-- wp:post-template -->
+        <!-- wp:post-featured-image {"isLink":true} /-->
 
-      <!-- wp:post-author-biography {"textColor":"quinary","fontSize":"sm","fontFamily":"sans"} /-->
+        <!-- wp:post-title {"isLink":true} /-->
 
-      <!-- wp:separator {"className":"is-style-wide"} -->
-      <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" />
-      <!-- /wp:separator -->
+        <!-- wp:post-author {"avatarSize":24,"showAvatar":false} /-->
+        <!-- /wp:post-template -->
 
-      <!-- wp:social-links {"openInNewTab":true,"size":"has-small-icon-size","className":"is-style-logos-only","style":{"spacing":{"blockGap":{"top":"16px","left":"16px"}}}} -->
-      <ul class="wp-block-social-links has-small-icon-size is-style-logos-only">
-        <!-- wp:social-link {"url":"#","service":"facebook"} /-->
+        <!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
+        <!-- wp:query-pagination-previous /-->
 
-        <!-- wp:social-link {"url":"#","service":"twitter"} /-->
-      </ul>
-      <!-- /wp:social-links -->
+        <!-- wp:query-pagination-numbers /-->
+
+        <!-- wp:query-pagination-next /-->
+        <!-- /wp:query-pagination -->
+      </div>
+      <!-- /wp:query -->
     </div>
     <!-- /wp:column -->
   </div>
   <!-- /wp:columns -->
 </main>
 <!-- /wp:group -->
-
 <!-- wp:template-part {"slug":"footer","theme":"spaceblock","tagName":"footer","className":"site-footer"} /-->

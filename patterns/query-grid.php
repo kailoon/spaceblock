@@ -5,28 +5,14 @@
  * Categories: spaceblock-query
  */
 ?>
-<!-- wp:query {"queryId":2,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"displayLayout":{"type":"flex","columns":3}} -->
-<div class="wp-block-query">
+<!-- wp:query {"queryId":14,"query":{"perPage":"4","pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":{"category":[67]}},"displayLayout":{"type":"flex","columns":4},"className":"is-style-default"} -->
+<div class="wp-block-query is-style-default">
   <!-- wp:post-template -->
   <!-- wp:post-featured-image {"isLink":true} /-->
 
-  <!-- wp:post-date /-->
-
   <!-- wp:post-title {"isLink":true} /-->
+
+  <!-- wp:post-author {"avatarSize":24,"showAvatar":false} /-->
   <!-- /wp:post-template -->
-
-  <!-- wp:query-pagination -->
-  <!-- wp:query-pagination-previous /-->
-
-  <!-- wp:query-pagination-numbers /-->
-
-  <!-- wp:query-pagination-next /-->
-  <!-- /wp:query-pagination -->
-
-  <!-- wp:query-no-results -->
-  <!-- wp:paragraph {"placeholder":"Add text or blocks that will display when the query returns no results."} -->
-  <p></p>
-  <!-- /wp:paragraph -->
-  <!-- /wp:query-no-results -->
 </div>
 <!-- /wp:query -->

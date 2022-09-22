@@ -7,9 +7,9 @@
 - [x] Author template
 - [x] 404 template
 - [x] Page template
-- [x] Archive template
+- [x] category template
+- [x] tag template
 - [x] Patterns
-- [ ] Unit Test
-- [ ] Screenshot
-- [ ] Readme.txt
-- [x] Sub Footer
+- [x] Unit Test
+- [x] Screenshot
+- [x] Readme.txt

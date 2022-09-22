@@ -9,22 +9,6 @@ wp.domReady(() => {
 			label: 'Featured Category 2'
 		}
 	])
-	wp.blocks.registerBlockStyle('core/heading', [
-		{
-			name: 'has-icon',
-			label: 'Has Icon'
-		}
-	])
-	wp.blocks.registerBlockStyle('core/post-featured-image', [
-		{
-			name: 'circle',
-			label: 'Circle'
-		},
-		{
-			name: 'rounded',
-			label: 'Rounded'
-		}
-	])
 	wp.blocks.registerBlockStyle('core/spacer', [
 		{
 			name: 'responsive-small',
@@ -38,12 +22,6 @@ wp.domReady(() => {
 		{
 			name: 'responsive-large',
 			label: 'Responsive Large'
-		}
-	])
-	wp.blocks.registerBlockStyle('core/columns', [
-		{
-			name: 'with-vertical-separator',
-			label: 'With Vertical Separator'
 		}
 	])
 	wp.blocks.registerBlockStyle('core/post-author', [

@@ -5,14 +5,19 @@
  * Categories: spaceblock-section
  */
 ?>
-<!-- wp:group {"tagName":"header","style":{"spacing":{"blockGap":"0px"}}} -->
+<!-- wp:group {"tagName":"header"} -->
 <header class="wp-block-group">
-  <!-- wp:heading {"style":{"typography":{"fontStyle":"italic","fontWeight":"400"}},"fontSize":"md"} -->
-  <h2 class="has-md-font-size" style="font-style:italic;font-weight:400">Sticky Posts</h2>
+  <!-- wp:separator {"backgroundColor":"quaternary","className":"is-style-wide"} -->
+  <hr
+    class="wp-block-separator has-text-color has-quaternary-color has-alpha-channel-opacity has-quaternary-background-color has-background is-style-wide" />
+  <!-- /wp:separator -->
+
+  <!-- wp:heading {"level":4} -->
+  <h4>Trending</h4>
   <!-- /wp:heading -->
 
-  <!-- wp:paragraph {"className":"is-style-description","fontSize":"sm"} -->
-  <p class="is-style-description has-sm-font-size">Section description.</p>
+  <!-- wp:paragraph {"textColor":"tertiary","className":"is-style-description","fontSize":"sm"} -->
+  <p class="is-style-description has-tertiary-color has-text-color has-sm-font-size">Posts from selected category.</p>
   <!-- /wp:paragraph -->
 </header>
 <!-- /wp:group -->

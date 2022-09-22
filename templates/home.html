@@ -4,42 +4,81 @@
 <main class="wp-block-group">
   <!-- wp:group {"tagName":"section","align":"wide"} -->
   <section class="wp-block-group alignwide">
-    <!-- wp:pattern {"slug":"spaceblock/section-header-style-2"} /-->
-
     <!-- wp:pattern {"slug":"spaceblock/query-featured-style-1"} /-->
   </section>
   <!-- /wp:group -->
 
-  <!-- wp:separator {"align":"wide","className":"is-style-wide"} -->
-  <hr class="wp-block-separator alignwide has-alpha-channel-opacity is-style-wide" />
-  <!-- /wp:separator -->
-
   <!-- wp:group {"tagName":"section","align":"wide"} -->
   <section class="wp-block-group alignwide">
-    <!-- wp:group {"tagName":"header","style":{"spacing":{"blockGap":"0px"}}} -->
+    <!-- wp:group {"tagName":"header"} -->
     <header class="wp-block-group">
-      <!-- wp:heading {"style":{"typography":{"fontStyle":"italic","fontWeight":"400"}},"fontSize":"md"} -->
-      <h2 class="has-md-font-size" style="font-style:italic;font-weight:400">Sticky Posts</h2>
+      <!-- wp:separator {"backgroundColor":"quaternary","className":"is-style-wide"} -->
+      <hr
+        class="wp-block-separator has-text-color has-quaternary-color has-alpha-channel-opacity has-quaternary-background-color has-background is-style-wide" />
+      <!-- /wp:separator -->
+
+      <!-- wp:heading {"level":4} -->
+      <h4>Trending</h4>
       <!-- /wp:heading -->
 
-      <!-- wp:paragraph {"className":"is-style-description","fontSize":"sm"} -->
-      <p class="is-style-description has-sm-font-size">Featured posts section to accommodate 4 posts. Either based on
-        category, tags or sticky posts.</p>
+      <!-- wp:paragraph {"textColor":"tertiary","className":"is-style-description","fontSize":"sm"} -->
+      <p class="is-style-description has-tertiary-color has-text-color has-sm-font-size">Posts from selected category.
+      </p>
       <!-- /wp:paragraph -->
     </header>
     <!-- /wp:group -->
-
     <!-- wp:pattern {"slug":"spaceblock/query-featured-style-2"} /-->
   </section>
   <!-- /wp:group -->
 
-  <!-- wp:spacer {"className":"is-style-responsive-large"} -->
-  <div style="height:100px" aria-hidden="true" class="wp-block-spacer is-style-responsive-large"></div>
-  <!-- /wp:spacer -->
+  <!-- wp:group {"tagName":"section","align":"wide"} -->
+  <section class="wp-block-group alignwide">
+    <!-- wp:group {"tagName":"header"} -->
+    <header class="wp-block-group">
+      <!-- wp:separator {"backgroundColor":"quaternary","className":"is-style-wide"} -->
+      <hr
+        class="wp-block-separator has-text-color has-quaternary-color has-alpha-channel-opacity has-quaternary-background-color has-background is-style-wide" />
+      <!-- /wp:separator -->
 
-  <!-- wp:pattern {"slug":"spaceblock/section-banner"} /-->
+      <!-- wp:heading {"level":4} -->
+      <h4>Category Name</h4>
+      <!-- /wp:heading -->
 
+      <!-- wp:paragraph {"textColor":"tertiary","className":"is-style-description","fontSize":"sm"} -->
+      <p class="is-style-description has-tertiary-color has-text-color has-sm-font-size">Posts from selected category.
+      </p>
+      <!-- /wp:paragraph -->
+    </header>
+    <!-- /wp:group -->
+    <!-- wp:pattern {"slug":"spaceblock/query-grid"} /-->
+
+  </section>
+  <!-- /wp:group -->
+
+  <!-- wp:group {"tagName":"section","align":"wide"} -->
+  <section class="wp-block-group alignwide">
+    <!-- wp:group {"tagName":"header"} -->
+    <header class="wp-block-group">
+      <!-- wp:separator {"backgroundColor":"quaternary","className":"is-style-wide"} -->
+      <hr
+        class="wp-block-separator has-text-color has-quaternary-color has-alpha-channel-opacity has-quaternary-background-color has-background is-style-wide" />
+      <!-- /wp:separator -->
+
+      <!-- wp:heading {"level":4} -->
+      <h4>Fresh</h4>
+      <!-- /wp:heading -->
+
+      <!-- wp:paragraph {"textColor":"tertiary","className":"is-style-description","fontSize":"sm"} -->
+      <p class="is-style-description has-tertiary-color has-text-color has-sm-font-size">Latest Posts.</p>
+      <!-- /wp:paragraph -->
+    </header>
+    <!-- /wp:group -->
+    <!-- wp:pattern {"slug":"spaceblock/query-list-normal"} /-->
+
+
+  </section>
+  <!-- /wp:group -->
 </main>
 <!-- /wp:group -->
 
-<!-- wp:template-part {"slug":"footer-withsub","theme":"spaceblock","tagName":"footer","className":"site-footer"} /-->
+<!-- wp:template-part {"slug":"footer","theme":"spaceblock","tagName":"footer","className":"site-footer"} /-->

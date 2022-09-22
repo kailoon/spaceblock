@@ -47,7 +47,7 @@ const watchTask = () =>
 	watch('src/scss/*.scss', series(sassTask, browsersyncReload))
 watch('src/js/app.js', series(jsTask, browsersyncReload))
 watch('**/*.html', series(browsersyncReload))
-watch('./theme.json', series(browsersyncReload))
+watch('**/*.json', series(browsersyncReload))
 
 // Default Gulp Task
 exports.default = series(sassTask, jsTask, browserSyncServe, watchTask)

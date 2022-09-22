@@ -286,7 +286,7 @@
 				"typography": {
 					"fontWeight": "500",
 					"fontSize": "var(--wp--preset--font-size--sm)",
-					"fontFamily": "var(--wp--preset--font-family--primary)"
+					"fontFamily": "var(--wp--preset--font-family--secondary)"
 				}
 			},
 			"core/cover": {

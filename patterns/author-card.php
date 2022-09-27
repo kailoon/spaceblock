@@ -16,8 +16,9 @@
       <div class="wp-block-column" style="flex-basis:20%">
         <!-- wp:image {"id":1908,"width":171,"height":256,"sizeSlug":"large","linkDestination":"none"} -->
         <figure class="wp-block-image size-large is-resized"><img
-            src="http://block-dev.test/wp-content/uploads/2022/09/m86psdx7olo-684x1024.jpg"
-            alt="woman in black scoop neck shirt" class="wp-image-1908" width="171" height="256" /></figure>
+            src="<?php echo esc_url(get_template_directory_uri()) .  '/assets/img/pexels-george-milton-6953849.jpg' ?>"
+            alt="<?php echo esc_attr__( 'Positive women talking during interview in studio
+', 'spaceblock' ) ?>" class=" wp-image-1908" width="171" height="256" /></figure>
         <!-- /wp:image -->
       </div>
       <!-- /wp:column -->

@@ -356,6 +356,7 @@ p.is-style-description {
 }
 .wp-block-query.is-style-featured-category-2 ul {
   flex-wrap: wrap;
+  gap: var(--wp--custom--spacing--outer);
 }
 .wp-block-query.is-style-featured-category-2 ul li {
   flex: 1 0 auto;

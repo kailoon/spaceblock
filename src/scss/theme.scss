@@ -307,6 +307,7 @@ p.is-style-description {
 	&.is-style-featured-category-2 {
 		ul {
 			flex-wrap: wrap;
+			gap: var(--wp--custom--spacing--outer);
 			li {
 				flex: 1 0 auto;
 				figure {
@@ -318,7 +319,6 @@ p.is-style-description {
 						flex: 100%;
 						display: flex;
 						gap: var(--wp--custom--spacing--outer);
-
 						figure {
 							aspect-ratio: 1/2;
 							max-height: 600px;

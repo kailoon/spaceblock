@@ -61,18 +61,6 @@ endif;
 add_action( 'enqueue_block_editor_assets', 'spaceblock_block_styles' );
 
 /*	-----------------------------------------------------------------------------------------------
-	Modify Excerpt
---------------------------------------------------------------------------------------------------- */
-if ( ! function_exists( 'spaceblock_excerpt_more' ) ) :
-
-function spaceblock_excerpt_more( $more ) {
-	return '&hellip;';
-}
-endif;
-
-add_filter( 'excerpt_more', 'spaceblock_excerpt_more' );
-
-/*	-----------------------------------------------------------------------------------------------
 	Register Patterns Categories
 --------------------------------------------------------------------------------------------------- */
 if ( ! function_exists( 'spaceblock_register_block_patterns' ) ) :

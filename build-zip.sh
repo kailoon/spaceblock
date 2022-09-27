@@ -25,6 +25,6 @@ set -e
 # Build the theme zip
 status "Creating theme zip... 🤐"
 
-zip -r spaceblook.zip assets/ parts/ patterns/ styles/ templates/ *.php readme.txt screenshot.png theme.json style.css
+zip -r ~/Downloads/spaceblook.zip assets/ parts/ patterns/ styles/ templates/ *.php readme.txt screenshot.png theme.json style.css
 
 status "You've built the theme ✅"

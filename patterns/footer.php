@@ -27,7 +27,7 @@
         <!-- wp:column -->
         <div class="wp-block-column">
           <!-- wp:paragraph {"textColor":"cyan-bluish-gray","fontSize":"sm"} -->
-          <p class="has-cyan-bluish-gray-color has-text-color has-sm-font-size">Main</p>
+          <p class="has-cyan-bluish-gray-color has-text-color has-sm-font-size"><?php echo esc_html__('Main', 'spaceblock') ?></p>
           <!-- /wp:paragraph -->
 
           <!-- wp:navigation {"ref":145,"overlayMenu":"never","layout":{"type":"flex","flexWrap":"wrap","orientation":"vertical"}} /-->
@@ -37,7 +37,7 @@
         <!-- wp:column -->
         <div class="wp-block-column">
           <!-- wp:paragraph {"textColor":"cyan-bluish-gray","fontSize":"sm"} -->
-          <p class="has-cyan-bluish-gray-color has-text-color has-sm-font-size">Products</p>
+          <p class="has-cyan-bluish-gray-color has-text-color has-sm-font-size"><?php echo esc_html__('Products', 'spaceblock') ?></p>
           <!-- /wp:paragraph -->
 
           <!-- wp:navigation {"ref":1245,"overlayMenu":"never","layout":{"type":"flex","flexWrap":"wrap","orientation":"vertical"}} /-->
@@ -47,7 +47,7 @@
         <!-- wp:column -->
         <div class="wp-block-column">
           <!-- wp:paragraph {"textColor":"cyan-bluish-gray","fontSize":"sm"} -->
-          <p class="has-cyan-bluish-gray-color has-text-color has-sm-font-size">Contact</p>
+          <p class="has-cyan-bluish-gray-color has-text-color has-sm-font-size"><?php echo esc_html__('Contact', 'spaceblock') ?></p>
           <!-- /wp:paragraph -->
 
           <!-- wp:navigation {"ref":1250,"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"}} /-->

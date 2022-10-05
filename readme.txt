@@ -35,32 +35,22 @@ Source: https://fonts.google.com/specimen/Syne
 
 Images ====
 = Block pattern Images =
-  Copyright George Milton
-	License: All photos and videos on Pexels can be downloaded and used for free.
-	Source: https://www.pexels.com/photo/positive-women-talking-during-interview-in-studio-6953849/
+  Page from Shi Zhu Zhai (1644–1911) print in high resolution by Hu Zhengyan. CC0.
+	https://www.rawpixel.com/image/3342550/free-illustration-image-chinese-qing-animal
 
 = Screenshot images =
-  License: All photos and videos on Pexels can be downloaded and used for free.
+  All images are under CC0 license.
+  By Hu Zhengyan
 
-  Copyright Engin Akyurt
-  Source: https://www.pexels.com/photo/selective-focus-photography-of-brown-wooden-book-shelf-2952871/
-
-  Copyright Albin Berlin
-  Source: https://www.pexels.com/photo/black-sail-ship-on-body-of-water-906982/
-
-  Copyright Tỷ Huỳnh
-  Source: https://www.pexels.com/photo/photo-of-smiling-woman-leaning-against-metal-and-glass-railing-reaching-out-her-hand-3153054/
-
-  Copyright Anna Shvets
-  Source: https://www.pexels.com/photo/photo-of-people-reaching-each-other-s-hands-4672717/
-
-  Copyright Yury Kim
-  Source: https://www.pexels.com/photo/man-carrying-gray-pipe-585419/
-
-
+  Page from Shi Zhu Zhai (1644–1911) print in high resolution
+  https://www.rawpixel.com/image/3325728/free-illustration-image-peach-art-chinese-painting
+  https://www.rawpixel.com/image/3336092/free-illustration-image-art-strawberry
+  https://www.rawpixel.com/image/3336093/free-illustration-image-antique-art-artwork
+  https://www.rawpixel.com/image/3342171/free-illustration-image-floral-botanical-art
+  https://www.rawpixel.com/image/3336097/free-illustration-image-antique-art-artwork
 
 == Changelog ==
 
-Version 0.1 (2022-09-22)
+Version 0.1.1 (2022-09-22)
 -------------------------
 - Release

@@ -16,11 +16,11 @@
       <div class="wp-block-group">
         <!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700","letterSpacing":"-1px"}},"textColor":"white","fontSize":"lg"} -->
         <p class="has-white-color has-text-color has-lg-font-size"
-          style="font-style:normal;font-weight:700;letter-spacing:-1px">Get into the space and start flowing</p>
+          style="font-style:normal;font-weight:700;letter-spacing:-1px"><?php echo esc_html__('Get into the space and start flowing', 'spaceblock' ) ?></p>
         <!-- /wp:paragraph -->
 
         <!-- wp:paragraph {"textColor":"senary","fontSize":"sm"} -->
-        <p class="has-senary-color has-text-color has-sm-font-size">Join the community to explore the space together.
+        <p class="has-senary-color has-text-color has-sm-font-size"><?php echo esc_html__('Join the community to explore the space together.', 'spaceblock') ?>
         </p>
         <!-- /wp:paragraph -->
       </div>
@@ -30,8 +30,8 @@
       <div class="wp-block-buttons">
         <!-- wp:button {"backgroundColor":"white","textColor":"black","className":"is-style-fill"} -->
         <div class="wp-block-button is-style-fill"><a
-            class="wp-block-button__link has-black-color has-white-background-color has-text-color has-background">Join
-            -></a></div>
+            class="wp-block-button__link has-black-color has-white-background-color has-text-color has-background"
+            href="<?php echo esc_url('#','spaceblock')?>"><?php echo esc_html__('Join ->','spaceblock') ?></a></div>
         <!-- /wp:button -->
       </div>
       <!-- /wp:buttons -->

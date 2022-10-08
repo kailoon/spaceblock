@@ -344,12 +344,19 @@
 			},
 			"core/navigation": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--sm)",
+					"fontSize": "var(--wp--preset--font-size--base)",
 					"fontFamily": "var(--wp--preset--font-family--secondary)",
 					"fontWeight": "500"
 				},
 				"color": {
 					"text": "var(--wp--preset--color--black)"
+				},
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var(--wp--preset-color--black)"
+						}
+					}
 				}
 			},
 			"core/query": {

@@ -9,7 +9,8 @@
 <section class="wp-block-group alignwide">
   <!-- wp:group {"layout":{"contentSize":"1024px"}} -->
   <div class="wp-block-group">
-    <!-- wp:group {"style":{"spacing":{"padding":{"top":"60px","right":"60px","bottom":"60px","left":"60px"}}},"backgroundColor":"black","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+    <!-- wp:group {"style":{"spacing":{"padding":{"top":"60px","right":"60px","bottom":"60px","left":"60px"}}},"backgroundColor":"black","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+
     <div class="wp-block-group has-black-background-color has-background"
       style="padding-top:60px;padding-right:60px;padding-bottom:60px;padding-left:60px">
       <!-- wp:group {"style":{"spacing":{"blockGap":"0px"}}} -->
